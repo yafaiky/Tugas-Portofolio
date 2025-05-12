@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Portofolio Rizky</title>
+</head>
+<body>
+  <!-- Toggle Theme -->
+  <button id="theme-toggle" aria-label="Toggle Theme">Click</button>
+
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo" tabindex="0">My Portofolio</div>
+        <button class="hamburger" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="zoom-in">
+    <img src="logo.png" alt="Foto Profil" class="hero-img"/>
+    <h1>Hi, I'm <span>Muhammad Rizky Yafa</span></h1>
+    <p>Web Developer | Siswa</p>
+    <a href="#contact" style="text-decoration:none" class="hero-button">hire me</a>
+  </section>
+
+  <!-- Main -->
+  <main class="container" tabindex="0">
+    <!-- About -->
+    <section id="about" class="about-me" data-aos="fade-up">
+      <h1>Heloo, saya <strong>Muhammad Rizky Yafa</strong></h1>
+      <p>Selamat datang di website portofolio saya. Saya adalah seorang mahasiswa dari Universitas Indonesia.</p>
+      <p>Saya percaya bahwa portofolio ini cukup untuk meyakinkan anda untuk menggunakan jasa saya.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <div class="skills-list" role="list">
+        <span class="skill" role="listitem">HTML</span>
+        <span class="skill" role="listitem">CSS</span>
+        <span class="skill" role="listitem">JavaScript</span>
+        <span class="skill" role="listitem">React</span>
+        <span class="skill" role="listitem">Express JS</span>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="Project-list">
+        <article class="project-item" tabindex="0">
+          <h3>Project 1</h3>
+          <p>Sebuah aplikasi berbasis web menggunakan React dan Express.</p>
+          <a href="#" class="project-link" target="_blank">Lihat Project</a>
+        </article>
+        <article class="project-item" tabindex="0">
+          <h3>Project 2</h3>
+          <p>Website portofolio pribadi yang interaktif dan responsif.</p>
+          <a href="#" class="project-link" target="_blank">Lihat Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required />
+        <div class="error" id="name-error"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error" id="email-error"></div>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="error" id="message-error"></div>
+
+        <button type="submit">Kirim Pesan</button>
+        <p class="success-msg" id="success-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>&copy; 2025 Muhammad Rizky Yafa</footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
