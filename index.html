@@ -28,7 +28,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" data-aos="zoom-in">
+  <section class="hero" data-aos="flip-up">
     <img src="logo.png" alt="Foto Profil" class="hero-img"/>
     <h1>Hi, I'm <span>Muhammad Rizky Yafa</span></h1>
     <p>Web Developer | Siswa</p>
@@ -60,22 +60,39 @@
     <section id="project" data-aos="fade-up">
       <h2>Projects</h2>
       <div class="Project-list">
+
+        <div class="card">
+          <article class="project-item" tabindex="0">
+            <img src="./assets/picture1.png" alt="Avatar" style="width:100%">
+            <h3>Project 1</h3>       
+            <p>Sebuah BOT yang dikembangkan dengan JavaScript</p>
+            <a href="https://bot-sand-nu.vercel.app/" style="text-decoration:none" class="project-link" target="_blank">Lihat Project</a>
+          </article>
+      </div>
+
+      <div class="card">
         <article class="project-item" tabindex="0">
-          <h3>Project 1</h3>
-          <p>Sebuah BOT yang dikembangkan dengan JavaScript</p>
-          <a href="https://bot-sand-nu.vercel.app/" style="text-decoration:none" class="project-link" target="_blank">Lihat Project</a>
-        </article>
-        <article class="project-item" tabindex="0">
+          <img src="./assets/picture2.png" alt="Avatar" style="width:100%">
           <h3>Project 2</h3>
           <p>Web yang dikembangkan dan digunakan untuk cek lahir</p>
           <a href="https://cek-lahir.vercel.app/" style="text-decoration:none" class="project-link" target="_blank">Lihat Project</a>
         </article>
       </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
+      <div class="card">
+        <article class="project-item" tabindex="0">
+          <img src="./assets/picture3.png" alt="Avatar" style="width:100%">
+          <h3>Project 3</h3>
+          <p>Sebuah situs anime yang dikembangkan menggunakan React</p>
+          <a href="https://streaming-anime-sepia.vercel.app/" style="text-decoration:none" class="project-link" target="_blank">Lihat Project</a>
+        </article>
+      </div>
+        </div>
+      </section>
+      
+      <!-- Contact -->
+      <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
       <form id="contact-form" novalidate>
         <label for="name">Nama Lengkap</label>
         <input type="text" id="name" name="name" required />
